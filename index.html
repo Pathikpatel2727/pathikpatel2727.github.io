@@ -93,12 +93,13 @@
       text-shadow: 0 2px 10px rgba(214,51,132,0.12);
     }
 
-    p {
-      color: #444;
-      font-size: clamp(1rem, 2.4vw, 1.25rem);
-      margin-bottom: 28px;
-      line-height: 1.7;
-    }
+   #proposalText {
+  color: #444;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  line-height: 1.6;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
 
     .story-box {
       min-height: 190px;
@@ -289,7 +290,7 @@
     <div id="proposalSection" class="hidden">
       <p id="proposalText">
         From the moment you came into my life, everything became more beautiful.<br>
-        Will you be mine forever? 💍❤️
+        <b>Will you be mine forever? 💍❤️</b>
       </p>
 
       <div class="buttons" id="buttonArea">
@@ -325,14 +326,14 @@
     const topNextWrapper = document.getElementById("topNextWrapper");
 
     const storyLines = [
-      `❤️ On <b>1st February 2026, Sunday</b>… the day I first saw your picture ❤️<br><br>
-      And from that very first moment, something inside me changed. I couldn’t stop looking at you. ❤️`,
+      `❤️ On <b>Sunday 1st February 2026</b>, the day I first saw your picture ❤️<br><br>
+      from that very first moment, something inside me changed. I couldn’t stop looking at you. ❤️`,
 
       `❤️ Then on <b>8th March</b>… the first time I saw you in real life at Jenno's Coffee House ✨<br><br>
       That moment felt different… like time slowed down, and everything around me disappeared except you. ❤️`,
 
       `❤️ And on <b>16th March</b>… I finally got your number 💌<br><br>
-      From that day, our little chats turned into the most special part of my life. ❤️`
+      From that day, our little chats became the most special part of my life. ❤️`
     ];
 
     let currentLine = 0;
