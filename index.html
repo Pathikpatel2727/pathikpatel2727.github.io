@@ -346,36 +346,36 @@
   </audio>
 
   <script>
-    const noBtn = document.getElementById("noBtn");
-    const yesBtn = document.getElementById("yesBtn");
-    const message = document.getElementById("message");
-    const buttonArea = document.getElementById("buttonArea");
-    const hearts = document.getElementById("hearts");
-    const bgMusic = document.getElementById("bgMusic");
-    const startOverlay = document.getElementById("startOverlay");
-    const startBtn = document.getElementById("startBtn");
+  const noBtn = document.getElementById("noBtn");
+  const yesBtn = document.getElementById("yesBtn");
+  const message = document.getElementById("message");
+  const buttonArea = document.getElementById("buttonArea");
+  const hearts = document.getElementById("hearts");
+  const bgMusic = document.getElementById("bgMusic");
+  const startOverlay = document.getElementById("startOverlay");
+  const startBtn = document.getElementById("startBtn");
 
-    const storySection = document.getElementById("storySection");
-    const proposalSection = document.getElementById("proposalSection");
-    const storyText = document.getElementById("storyText");
-    const proposalText = document.getElementById("proposalText");
-    const nextBtn = document.getElementById("nextBtn");
-    const topNextWrapper = document.getElementById("topNextWrapper");
-    const mainHeading = document.getElementById("mainHeading");
-    const mainCard = document.getElementById("mainCard");
+  const storySection = document.getElementById("storySection");
+  const proposalSection = document.getElementById("proposalSection");
+  const storyText = document.getElementById("storyText");
+  const proposalText = document.getElementById("proposalText");
+  const nextBtn = document.getElementById("nextBtn");
+  const topNextWrapper = document.getElementById("topNextWrapper");
+  const mainHeading = document.getElementById("mainHeading");
+  const mainCard = document.getElementById("mainCard");
 
-    const storyLines = [
-      `❤️ On <b>Sunday 1st February 2026</b>, the day I first saw your picture ❤️<br><br>
-      from that very first moment, something inside me changed. I couldn’t stop looking at you. ❤️`,
+  const storyLines = [
+    `❤️ On <b>Sunday, 1st February 2026</b>, the day I first saw your picture,<br><br>
+    something changed inside me. From that very first moment, I could not take my eyes off you. ❤️`,
 
-      `❤️ Then on <b>8th March</b>… the first time I saw you in real life at Jenno's Coffee House ✨<br><br>
-      That moment felt different… like time slowed down, and everything around me disappeared except you. ❤️`,
+    `❤️ Then on <b>8th March</b>, I saw you in real life for the very first time at Jenno's Coffee House. ✨<br><br>
+    That moment felt different... as if time slowed down, and everything around me disappeared except you. ❤️`,
 
-      `❤️ And on <b>16th March</b>… I finally got your number 💌<br><br>
-      From that day, our little chats became the most special part of my life. ❤️`
-    ];
+    `❤️ And on <b>16th March</b>, I finally got your number. 💌<br><br>
+    From that day on, our little chats became the most special part of my life. ❤️`
+  ];
 
-    let currentLine = 0;
+  let currentLine = 0;
 
     function animateText(element) {
       element.classList.remove("text-romantic-show");
@@ -385,7 +385,7 @@
 
     function showStoryLine() {
       if (currentLine === 0) {
-        mainHeading.innerHTML = "Dear Heer ❤️";
+        mainHeading.innerHTML = " <b>Dear Heer</b> ❤️";
         animateText(mainHeading);
       } else {
         mainHeading.innerHTML = "";
@@ -407,7 +407,7 @@
         storySection.classList.add("hidden");
         proposalSection.classList.remove("hidden");
         topNextWrapper.classList.add("hidden");
-        mainHeading.innerHTML = "Dear Heer ❤️";
+        mainHeading.innerHTML = "<b>Dear Heer</b> ❤️";
         animateText(mainHeading);
         animateText(proposalText);
         createSparklesAroundCard();
@@ -467,7 +467,7 @@
     noBtn.addEventListener("mouseenter", moveNoButton);
 
     yesBtn.addEventListener("click", () => {
-      message.innerHTML = "Yayyyyy! 💍❤️ I knew it ❤️, <br><br>Designed by ❤️PatHik❤️";
+      message.innerHTML = "Yayyyyy! 💍❤️ I knew it ❤️, <br><br>Forever yours, ❤️PatHik❤️";
       animateText(message);
       createHearts();
       createSparklesAroundCard();
